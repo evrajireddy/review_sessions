@@ -5,10 +5,21 @@
 
 
 
-// Given ab array of numbers and a given target. return the target if it's in the array or undefined if it's not
+// Given an array of numbers and a given target. return the target if it's in the array or undefined if it's not
 
 
+function findElement(arr, target){
+    
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] = target){
+            return 'target';
+        }else{
+            return 'undefined';
+        }
+    }
 
+}
+console.log(findElement(arr,target));
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
 
 
