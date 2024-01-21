@@ -26,6 +26,23 @@ console.log(findElement(arr,7));
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
 
+let newArr=[2,5,15,8,9];
+function findElement(newArr, target){
+    
+    for(let i=0; i<newArr.length; i++){
+        if(newArr[i] > target){
+            return newArr[i];
+        }
+        
+    }
+
+    
+
+}
+
+console.log(findElement(newArr,14));
+//console.log(findElement(newArr,7));
+
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
