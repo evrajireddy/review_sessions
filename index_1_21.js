@@ -96,3 +96,15 @@ console.log(findObj(arrObj, 'id'));
  name: "Robert"
 }
 */
+
+function returnObject(newarrObj, target){
+    for(let i=0; i<newarrObj.length; i++){
+        if(newarrObj[i]['id']=target){
+            return newarrObj[i]['name'];
+        }
+    }
+
+}
+
+console.log(returnObject(arrObj, 'id'));
+
