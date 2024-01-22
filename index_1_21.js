@@ -72,6 +72,23 @@ console.log(findString(arrayString, 4));
 }
 */
 
+let arrObj = [{
+id: "Y42C_a",
+name: "Robert",
+occupation: "Chef",
+eyeColor: "green"
+}];
+
+function findObj(arrObj, target){
+    for(let i=0; i<arrObj.length; i++){
+        
+        if(arrObj[i]['id'] = target){
+            return arrObj[i];
+        
+        }
+    }
+}
+console.log(findObj(arrObj, 'id'));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
