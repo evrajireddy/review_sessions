@@ -41,11 +41,23 @@ function findElement(newArr, target){
 }
 
 console.log(findElement(newArr,14));
-//console.log(findElement(newArr,7));
+console.log(findElement(newArr,7));
 
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
+
+let arrayString = ['venkata', 'ram', 'krishna', 'subbu', 'jen'];
+function findString(arr, target){
+
+    for(let i=0; i<arr.length; i++){
+        if(arr[i].length>target){
+            return arr[i]
+        }
+    }
+}
+
+console.log(findString(arrayString, 4));
 
 
 
