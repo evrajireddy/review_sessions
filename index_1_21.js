@@ -103,7 +103,7 @@ function findObj(arrObj, target){
         }
     }
 }
-console.log(findObj(arrObj, 'Y42C_a')); 
+console.log(findObj(arrObj, 'id')); 
 console.log(findObj(arrObj, 'Y42o_l'));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
@@ -114,13 +114,15 @@ console.log(findObj(arrObj, 'Y42o_l'));
 */
 
 function returnObject(newarrObj, target){
+    const newObj = {};
     for(let i=0; i<newarrObj.length; i++){
-        if(newarrObj[i]['id']=target){
-            return newarrObj[i]['name'];
+
+        if(newarrObj[i]['name']===target){
+             newObj.name = target;
         }
     }
-
+return newObj;
 }
 
-console.log(returnObject(arrObj, 'id'));
+console.log(returnObject(arrObj, 'Robert'));
 
