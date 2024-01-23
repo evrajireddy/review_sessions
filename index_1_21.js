@@ -125,4 +125,5 @@ return newObj;
 }
 
 console.log(returnObject(arrObj, 'Robert'));
+console.log(returnObject(arrObj, 'peter'))
 
