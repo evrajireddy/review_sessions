@@ -77,18 +77,34 @@ id: "Y42C_a",
 name: "Robert",
 occupation: "Chef",
 eyeColor: "green"
-}];
+}, {
+    id: "Y42a_b",
+    name: "John",
+    occupation: "Chef",
+    eyeColor: "green"
+    }, {
+        id: "Y42d_k",
+        name: "Rob",
+        occupation: "Chef",
+        eyeColor: "green"
+        }, {
+            id: "Y42o_l",
+            name: "peter",
+            occupation: "Chef",
+            eyeColor: "green"
+            }];
 
 function findObj(arrObj, target){
     for(let i=0; i<arrObj.length; i++){
         
-        if(arrObj[i]['id'] = target){
+        if(arrObj[i]['id'] === target){
             return arrObj[i];
         
         }
     }
 }
-console.log(findObj(arrObj, 'id'));
+console.log(findObj(arrObj, 'Y42C_a')); 
+console.log(findObj(arrObj, 'Y42o_l'));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
