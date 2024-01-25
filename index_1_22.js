@@ -37,11 +37,11 @@ console.log(capitalizeEachWord("have a nice day"))
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
 
-function formatGreeting(john){
-  let newString = " ";
-  newString = "Hello "+ john.firstName + john.lastName, + "have a great day at your job as a "+ john.occupation ;
+function formatGreeting(obj){
+  
+  return "Hello "+ obj.firstName + " " + obj.lastName + ", have a great day at your job as a "+ obj.occupation ;
 
-  return newString;
+  
 }
 
 
@@ -57,8 +57,8 @@ function formatGreeting(john){
    occupation: "Teacher"
  }
 
-console.log(formatGreeting(john) === "Hello John Klaus, have a great day at your job as a Carpenter")
-//console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day at your job as a Teacher")
+console.log(formatGreeting(john) );
+console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day at your job as a Teacher")
 /*
 // 3.----------------------------------
 // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
