@@ -188,7 +188,7 @@ const dinos = [
     },
     {
       dinosaurId: "U9vuZmgKwUr",
-      name: "Xenoceratops",
+      name: "Xenoceratops", // "name"
       pronunciation: "ZEE-no-SEH-ruh-tops",
       meaningOfName: "alien horned face",
       diet: "herbivorous",
@@ -220,7 +220,7 @@ const dinos = [
     
    }
 
-   console.log(returnKey(dinos[0],'name' ));
+   console.log(returnKey(dinos[0],'name' )); dino.name = "name"
   // ------------------------------------------------------
   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
   
@@ -239,7 +239,23 @@ const dinos = [
   
   
   
-  
+  function findingKeyvalues(dinos, key){
+    let newArray =[];
+
+    for(let i=0; i<dinos.length; i++){
+        if(dinos[i][key]){
+            newArray.push(dinos[i][key]);
+        }
+        
+    } 
+
+
+
+  return newArray;  
+
+  }
+
+  console.log(findingKeyvalues(dinos, 'name'));
   
   
   
