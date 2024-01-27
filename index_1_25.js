@@ -130,26 +130,22 @@ const companyOrganizationalStructure = {
     },
   };
   
-  // YOUR CODE HERE
-
-  
-//   a. Log the desk of the second software engineer in the development department
-//   b. Log the location of the head of the marketing department
-//   c. Log the name of the CEO's executive assistant
-//   d. Add yourself as a third software engineer to the development office
-//   e. Update the name of the head of marketing to "Johann Marketer"
-
-   console.log(employee = companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer2.desk);
-  
-  console.log(location = companyOrganizationalStructure.departments.marketing.head.office.location);
+// YOUR CODE HERE
+//a. Log the desk of the second software engineer in the development department
+console.log(employee = companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer2.desk);
+//b. Log the location of the head of the marketing department
+console.log(location = companyOrganizationalStructure.departments.marketing.head.office.location);
+//c. Log the name of the CEO's executive assistant
 console.log(executiveAssistant = companyOrganizationalStructure.CEO.office.employees.executiveAssistant.name);
-
- companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer3 = {
+//d. Add yourself as a third software engineer to the development office
+companyOrganizationalStructure.departments.development.head.office.employees.softwareEngineer3 = {
   name: "venkata",
   desk: "B803",
 };
 console.table(companyOrganizationalStructure.departments.development.head.office.employees);
+//e. Update the name of the head of marketing to "Johann Marketer"
 console.log( companyOrganizationalStructure.departments.marketing.head.name = "Johann Marketer");
+
 // 5. Given the following variables, create a new object. the key variable should be the key and the value variable should be it's corresponding value. You have to use the variables!
 
  key = "name";
