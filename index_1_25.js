@@ -169,3 +169,32 @@ console.log(callObj(newObj));
 // ------------------------------------------------------------------------
 
 // 7. Write a function that takes two objects and checks if they have the same values. HINT: use the (for.. in..) loop
+
+const obj = { a: 1, b: 2, c: 3 };
+const obj1 = { a: 1, b: 2, c: 3 };
+const obj2 = {a: 1, b: 3, c: 4};
+
+
+
+
+function comparingObjects(object, object1) {
+  const keys1 = Object.keys(object);
+  const keys2 = Object.keys(object1);
+
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+
+  for (let key of keys1) {
+    if (object[key] !== object1[key]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(comparingObjects(obj, obj1));
+console.log(comparingObjects(obj, obj2));
+
+
