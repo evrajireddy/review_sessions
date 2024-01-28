@@ -65,6 +65,17 @@ function findLengthArray(array){
 console.log(findLengthArray(['arrayString', 'ray','venkata']));
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
 
+function sumEvenNumbers(arr){
+    let sum = 0;
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] % 2 === 0){
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers([1,2,3,4,5,6]));
+
 // 5. Write a function that takes an array of numbers and returns the min num
 
 // 6. Write a function that takes in a string and returns the character that appears the most times (only letters count)
