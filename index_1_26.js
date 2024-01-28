@@ -7,7 +7,7 @@
 
 // 1. Write a function that takes in an array of strings and returns a new array where each string is replaced by it's length
 // ["hello", "world"] => [5, 5] 
-
+/*
 function replacingArray(arrayString){
 
     let newarrayString = [];
@@ -15,7 +15,7 @@ function replacingArray(arrayString){
 
     for(let i=0; i<arrayString.length; i++){
 
-        newarrayString.push(arraystring_replace("arrayString[i]", "newString"))
+        newarrayString.push(string_replace("arrayString[i]", "newString"))
 
 
 
@@ -26,9 +26,27 @@ function replacingArray(arrayString){
 }
 
 console.log(replacingArray('arrayString'));
+*/
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
+function stringLongerthanFiveCharacters(arrayString){
 
+    let newarrayString = [];
+
+    for (let i=0; i<arrayString.length; i++){
+
+        if(arrayString[i].length>5){
+
+        
+        newarrayString.push(arrayString[i]);
+    }
+    }
+
+    return newarrayString;
+
+}
+
+console.log(stringLongerthanFiveCharacters('arrayString'));
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
