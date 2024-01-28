@@ -46,9 +46,23 @@ function stringLongerthanFiveCharacters(arrayString){
 
 }
 
-console.log(stringLongerthanFiveCharacters('arrayString'));
-// 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
+console.log(stringLongerthanFiveCharacters(['arrayString']));
+// 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
+function findLengthArray(array){
+   /* let newArray = [];
+    for(let string of array){
+        if(string.length>5){
+            newArray.push(string.length);
+        }
+    }
+    return newArray;
+    */
+   return array.filter(str => str.length>5).map(str =>str.length)
+
+}
+
+console.log(findLengthArray(['arrayString', 'ray','venkata']));
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
 
 // 5. Write a function that takes an array of numbers and returns the min num
