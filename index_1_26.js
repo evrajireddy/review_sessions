@@ -7,7 +7,7 @@
 
 // 1. Write a function that takes in an array of strings and returns a new array where each string is replaced by it's length
 // ["hello", "world"] => [5, 5] 
-/*
+
 function replacingArray(arrayString){
 
     let newarrayString = [];
@@ -26,7 +26,7 @@ function replacingArray(arrayString){
 }
 
 console.log(replacingArray('arrayString'));
-*/
+
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 function stringLongerthanFiveCharacters(arrayString){
@@ -76,6 +76,65 @@ function sumEvenNumbers(arr){
 }
 console.log(sumEvenNumbers([1,2,3,4,5,6]));
 
+function sumnewEvenNumbers(arr){
+    let sum = arr.reduce((acc, currentValue) => {
+         if(currentValue % 2 === 0){
+            acc = acc+currentValue;
+        }
+        return acc;
+    },0)
+    return sum;
+}
+
+console.log(sumnewEvenNumbers([1,2,3,4,5,6]));
+
 // 5. Write a function that takes an array of numbers and returns the min num
 
+function findingMinNum(newArr){
+    
+let min = newArr[0];
+
+for(let i = 1; i < newArr.length; i++){
+    if(newArr[i]<min){
+
+     min = arr[i]
+
+    }
+
+    return min ;
+}
+
+
+
+}
+
+
+let newArr = [2,3,4,5,6];
+
+console.log(findingMinNum(newArr));
+
+minNum = Math.min(...newArr);
+console.log(minNum);
+
 // 6. Write a function that takes in a string and returns the character that appears the most times (only letters count)
+
+function highestNumberString(){
+ 
+
+let eachcount = 0;
+
+for (let i = 0; i < str.length; i++) {
+
+    if(str[i]){
+
+    eachcount++;
+
+}
+return eachcount;
+}}
+let str = "venkatarajireddyeda";
+
+console.log(highestNumberString(str));
+
+
+
